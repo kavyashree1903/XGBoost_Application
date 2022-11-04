@@ -102,7 +102,7 @@ def input_variable():
 df = input_variable()
 
 st.header('Specified Input Parameters')
-st.write(df)
+st.table(df)
 st.write("Here, x1 = σci/γB")
 st.write("x2 = d/B")
 st.write("x3 = GSI")

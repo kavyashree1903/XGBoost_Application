@@ -103,7 +103,11 @@ df = input_variable()
 
 st.header('Specified Input Parameters')
 st.write(df)
-st.write('Here x1 stands for σci/γB, x2 stands for d/B, x3 stands for GSI, x4 stands for kh and x5 stands for mi')
+st.write("Here, x1 = σci/γB")
+st.write("x2 = d/B")
+st.write("x3 = GSI")
+st.write("x4 = kh")
+st.write("x5 = mi")
 st.write('---')
 
 maxes = []

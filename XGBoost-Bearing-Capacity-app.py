@@ -110,10 +110,7 @@ st.write("x4 = kh")
 st.write("x5 = mi")
 st.write('---')
 
-st.header('Predicted Seismic Bearing Capacity Factor')
-st.subheader("Regressor Used: XGBoost")
-st.write('Seismic Bearing Capacity Factor (N) =', prediction[0])
-st.write('---')
+
 st.header('Relative Importance of Each Feature in the XGBoost Model')
 
 image = Image.open('RI.png')
@@ -148,3 +145,7 @@ def model():
 
 prediction=model()
 
+st.header('Predicted Seismic Bearing Capacity Factor')
+st.subheader("Regressor Used: XGBoost")
+st.write('Seismic Bearing Capacity Factor (N) =', prediction[0])
+st.write('---')

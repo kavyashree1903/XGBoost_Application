@@ -133,10 +133,10 @@ def model():
     return prediction
 
 prediction=model()
-
+answer = str(round(prediction[0], 3))
 st.header('Predicted Seismic Bearing Capacity Factor')
 st.subheader("Regressor Used: XGBoost")
-st.write('Seismic Bearing Capacity Factor (N) =', prediction[0])
+st.write('Seismic Bearing Capacity Factor (N) =', answer)
 st.write('---')
 st.header('Relative Importance of Each Feature in the XGBoost Model')
 

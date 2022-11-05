@@ -103,18 +103,7 @@ df = input_variable()
 
 st.header('Specified Input Parameters')
 st.table(df)
-st.write("Here, x1 = σci/γB")
-st.write("x2 = d/B")
-st.write("x3 = GSI")
-st.write("x4 = kh")
-st.write("x5 = mi")
-st.write('---')
-
-
-st.header('Relative Importance of Each Feature in the XGBoost Model')
-
-image = Image.open('RI.png')
-st.image(image, use_column_width=True)
+st.write('Here x1 = σci/γB, x2 = d/B, x3 = GSI, x4 = kh and x5 = mi')
 
 maxes = []
 mins = []
@@ -149,3 +138,7 @@ st.header('Predicted Seismic Bearing Capacity Factor')
 st.subheader("Regressor Used: XGBoost")
 st.write('Seismic Bearing Capacity Factor (N) =', prediction[0])
 st.write('---')
+st.header('Relative Importance of Each Feature in the XGBoost Model')
+
+image = Image.open('RI.png')
+st.image(image, use_column_width=True)

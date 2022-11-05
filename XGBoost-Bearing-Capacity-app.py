@@ -140,5 +140,5 @@ st.write('Seismic Bearing Capacity Factor (N) =', prediction[0])
 st.write('---')
 st.header('Relative Importance of Each Feature in the XGBoost Model')
 
-image = Image.open('RI.png')
+image = Image.open('Picture.png')
 st.image(image, use_column_width=True)
